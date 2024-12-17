@@ -16,10 +16,10 @@ test:
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
   host: <%= ENV['DB_HOST'] || 'localhost' %>
-
+  
 production:
   <<: *default
-  database: url_shortener_api_production
+  database: <%= ENV['DATABASE_URL'] %>
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
   host: <%= ENV['DB_HOST'] || 'localhost' %>
