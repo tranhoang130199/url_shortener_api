@@ -113,7 +113,7 @@ Example Response:
 }
 ```
 
-### 2. **Redirect to the Original URL**
+### 2. **Get the Original URL from Short URL**
 
 **POST** `/decode`
 
